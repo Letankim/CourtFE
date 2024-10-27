@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách sân bãi</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="mb-0">1DO</h1>
+        <button class="btn btn-warning">Chăm Sóc Khách Hàng</button>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-home"></i> Trang chủ</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="caulong.html"> Danh sách sân bãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="detail.html">Chi tiết</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html"> Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Lịch sử</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history-detail.html"
+                >Chi tiết lịch sử</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="auth.html"
+                ><i class="fas fa-user-plus"></i> Đăng ký/Đăng nhập</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-light ml-2">
+            <i class="fas fa-search"></i> Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Sidebar Filter -->
+        <div class="col-md-3">
+          <h5>Bộ lọc</h5>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h6 class="card-title">Giá</h6>
+              <div class="form-group">
+                <label for="min-price">Giá tối thiểu (VNĐ)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="min-price"
+                  placeholder="0"
+                />
+              </div>
+              <div class="form-group">
+                <label for="max-price">Giá tối đa (VNĐ)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="max-price"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h6 class="card-title">Giờ mở cửa</h6>
+              <div class="form-group">
+                <label for="open-time">Giờ bắt đầu</label>
+                <input type="time" class="form-control" id="open-time" />
+              </div>
+              <div class="form-group">
+                <label for="close-time">Giờ kết thúc</label>
+                <input type="time" class="form-control" id="close-time" />
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block">Áp dụng bộ lọc</button>
+        </div>
+
+        <!-- List of Courts -->
+        <div class="col-md-9 courtsList">
+          <h3 class="mb-4">Danh sách sân bãi</h3>
+          <div class="row">
+            <!-- Card for each court -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img
+                  src="https://manager.datsan247.com/assets/images/banner-client-placeholder.jpg"
+                  class="card-img-top"
+                  alt="Sân"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sân cầu lông Ngọc Hồi</h5>
+                  <p class="card-text">
+                    <i class="fas fa-phone"></i> 0986768780 <br />
+                    <i class="fas fa-map-marker-alt"></i> 319 Đường 23/10, Ngọc
+                    Hiệp, Nha Trang, Khánh Hòa, Việt Nam
+                  </p>
+                  <a href="#" class="btn btn-primary">Chi tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Repeat for more courts -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img
+                  src="https://manager.datsan247.com/assets/images/banner-client-placeholder.jpg"
+                  class="card-img-top"
+                  alt="Sân"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sân cầu lông Rạch Giá</h5>
+                  <p class="card-text">
+                    <i class="fas fa-phone"></i> 0763888498 <br />
+                    <i class="fas fa-map-marker-alt"></i> 498 Ngô Quyền, Vĩnh
+                    Lạc, Rạch Giá, Kiên Giang, Việt Nam
+                  </p>
+                  <a href="#" class="btn btn-primary">Chi tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-sm">
+                <img
+                  src="https://manager.datsan247.com/assets/images/banner-client-placeholder.jpg"
+                  class="card-img-top"
+                  alt="Sân"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sân cộng đồng 1</h5>
+                  <p class="card-text">
+                    <i class="fas fa-phone"></i> 0937161328 <br />
+                    <i class="fas fa-map-marker-alt"></i> 123 ABC, Quận 1,
+                    TP.HCM, Việt Nam
+                  </p>
+                  <a href="#" class="btn btn-primary">Chi tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+          </div>
+
+          <!-- Pagination -->
+          <!-- Pagination -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center custom-pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Trước</a
+                >
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Tiếp theo</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>GIỚI THIỆU</h5>
+            <p>
+              Đặt sân 247 cung cấp các tiện ích thông minh giúp cho bạn tìm sân
+              bãi và đặt sân một cách hiệu quả nhất.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>THÔNG TIN</h5>
+            <p>Công ty Cổ phần Booking 247</p>
+            <p>MST: 0110175404</p>
+            <p>Email: contact@datsan247.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5>LIÊN HỆ</h5>
+            <p>Chăm sóc khách hàng: 0247.303.0247</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

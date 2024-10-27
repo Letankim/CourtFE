@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập / Đăng ký</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="auth.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="mb-0"><i class="fas fa-badminton"></i> 1DO</h1>
+        <button class="btn btn-warning">
+          <i class="fas fa-headset"></i> Chăm Sóc Khách Hàng
+        </button>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-home"></i> Trang chủ</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="caulong.html"> Danh sách sân bãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="detail.html">Chi tiết</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html"> Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Lịch sử</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history-detail.html"
+                >Chi tiết lịch sử</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="auth.html"
+                ><i class="fas fa-user-plus"></i> Đăng ký/Đăng nhập</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-light ml-2">
+            <i class="fas fa-search"></i> Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <!-- Tab navigation -->
+          <ul class="nav nav-tabs" id="authTabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="login-tab"
+                data-toggle="tab"
+                href="#login"
+                role="tab"
+                aria-controls="login"
+                aria-selected="true"
+              >
+                <i class="fas fa-sign-in-alt"></i> Đăng nhập
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="register-tab"
+                data-toggle="tab"
+                href="#register"
+                role="tab"
+                aria-controls="register"
+                aria-selected="false"
+              >
+                <i class="fas fa-user-plus"></i> Đăng ký
+              </a>
+            </li>
+          </ul>
+
+          <!-- Tab content -->
+          <div class="tab-content p-4 border border-top-0 shadow-lg rounded-lg">
+            <!-- Đăng nhập -->
+            <div
+              class="tab-pane fade show active"
+              id="login"
+              role="tabpanel"
+              aria-labelledby="login-tab"
+            >
+              <h4 class="text-center mb-4">
+                <i class="fas fa-sign-in-alt"></i> Đăng nhập
+              </h4>
+              <form>
+                <div class="form-group">
+                  <label for="username"
+                    ><i class="fas fa-user"></i> Tên đăng nhập</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password"
+                    ><i class="fas fa-lock"></i> Mật khẩu</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fas fa-sign-in-alt"></i> Đăng nhập
+                </button>
+                <div class="text-center mt-3">
+                  <a href="forgetpassword.html" class="text-muted"
+                    ><i class="fas fa-key"></i> Quên mật khẩu?</a
+                  >
+                </div>
+              </form>
+              <hr />
+              <div class="text-center">
+                <button class="btn btn-outline-danger btn-block mb-2">
+                  <i class="fab fa-google"></i> Đăng nhập với Google
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                  <i class="fab fa-facebook-f"></i> Đăng nhập với Facebook
+                </button>
+              </div>
+            </div>
+
+            <!-- Đăng ký -->
+            <div
+              class="tab-pane fade"
+              id="register"
+              role="tabpanel"
+              aria-labelledby="register-tab"
+            >
+              <h4 class="text-center mb-4">
+                <i class="fas fa-user-plus"></i> Đăng ký
+              </h4>
+              <form>
+                <div class="form-group">
+                  <label for="fullname"
+                    ><i class="fas fa-user-circle"></i> Họ và tên</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"
+                    ><i class="fas fa-envelope"></i> Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone"
+                    ><i class="fas fa-phone"></i> Số điện thoại</label
+                  >
+                  <input type="tel" class="form-control" id="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="registerUsername"
+                    ><i class="fas fa-user"></i> Tên đăng nhập</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="registerUsername"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="registerPassword"
+                    ><i class="fas fa-lock"></i> Mật khẩu</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="registerPassword"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-success btn-block">
+                  <i class="fas fa-user-plus"></i> Đăng ký
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>GIỚI THIỆU</h5>
+            <p>
+              Đặt sân 247 cung cấp các tiện ích thông minh giúp cho bạn tìm sân
+              bãi và đặt sân một cách hiệu quả nhất.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>THÔNG TIN</h5>
+            <p>Công ty Cổ phần Booking 247</p>
+            <p>MST: 0110175404</p>
+            <p>Email: contact@datsan247.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5>LIÊN HỆ</h5>
+            <p>Chăm sóc khách hàng: 0247.303.0247</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

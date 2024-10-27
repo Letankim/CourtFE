@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt lịch sân cầu lông</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="mb-0"><i class="fas fa-badminton"></i> 1DO</h1>
+        <button class="btn btn-warning">
+          <i class="fas fa-headset"></i> Chăm Sóc Khách Hàng
+        </button>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-home"></i> Trang chủ</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="caulong.html"> Danh sách sân bãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="detail.html">Chi tiết</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html"> Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Lịch sử</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history-detail.html"
+                >Chi tiết lịch sử</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="auth.html"
+                ><i class="fas fa-user-plus"></i> Đăng ký/Đăng nhập</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-light ml-2">
+            <i class="fas fa-search"></i> Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <h2 class="text-center">
+        <i class="fas fa-calendar-alt"></i> Đặt lịch sân cầu lông
+      </h2>
+      <div class="row mt-4">
+        <!-- Lựa chọn khung giờ -->
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow-lg p-3 h-100 border-0 rounded-lg">
+            <h4 class="card-title">
+              <i class="fas fa-clock"></i> Chọn khung giờ
+            </h4>
+            <hr />
+            <div class="d-flex flex-wrap">
+              <!-- Các slot giờ, mỗi slot là một nút -->
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="08:00-09:00"
+              >
+                <i class="far fa-clock"></i> 08:00 - 09:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="09:00-10:00"
+              >
+                <i class="far fa-clock"></i> 09:00 - 10:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="10:00-11:00"
+              >
+                <i class="far fa-clock"></i> 10:00 - 11:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="11:00-12:00"
+              >
+                <i class="far fa-clock"></i> 11:00 - 12:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="12:00-13:00"
+              >
+                <i class="far fa-clock"></i> 12:00 - 13:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="13:00-14:00"
+              >
+                <i class="far fa-clock"></i> 13:00 - 14:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="14:00-15:00"
+              >
+                <i class="far fa-clock"></i> 14:00 - 15:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="15:00-16:00"
+              >
+                <i class="far fa-clock"></i> 15:00 - 16:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="16:00-17:00"
+              >
+                <i class="far fa-clock"></i> 16:00 - 17:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="17:00-18:00"
+              >
+                <i class="far fa-clock"></i> 17:00 - 18:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="18:00-19:00"
+              >
+                <i class="far fa-clock"></i> 18:00 - 19:00
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 time-slot"
+                data-slot="19:00-20:00"
+              >
+                <i class="far fa-clock"></i> 19:00 - 20:00
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chọn phụ kiện -->
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow-lg p-3 h-100 border-0 rounded-lg">
+            <h4 class="card-title">
+              <i class="fas fa-box"></i> Chọn phụ kiện kèm theo
+            </h4>
+            <hr />
+            <div class="row">
+              <!-- Phụ kiện 1 -->
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card accessory-card shadow-sm border-0">
+                  <div class="card-body text-center p-2">
+                    <h6 class="card-title mb-1">
+                      <i class="fas fa-shuttlecock"></i> Cầu lông
+                    </h6>
+                    <p class="card-text mb-2">30,000 VNĐ</p>
+                    <input
+                      type="checkbox"
+                      class="accessory-checkbox"
+                      id="shuttlecocks"
+                    />
+                    <label for="shuttlecocks" class="d-block mb-1">Chọn</label>
+                    <input
+                      type="number"
+                      class="form-control quantity-input"
+                      placeholder="Số lượng"
+                      min="1"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Phụ kiện 2 -->
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card accessory-card shadow-sm border-0">
+                  <div class="card-body text-center p-2">
+                    <h6 class="card-title mb-1">
+                      <i class="fas fa-racket"></i> Vợt cầu lông
+                    </h6>
+                    <p class="card-text mb-2">50,000 VNĐ</p>
+                    <input
+                      type="checkbox"
+                      class="accessory-checkbox"
+                      id="racket"
+                    />
+                    <label for="racket" class="d-block mb-1">Chọn</label>
+                    <input
+                      type="number"
+                      class="form-control quantity-input"
+                      placeholder="Số lượng"
+                      min="1"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Phụ kiện 3 -->
+              <div class="col-6 col-md-4 mb-3">
+                <div class="card accessory-card shadow-sm border-0">
+                  <div class="card-body text-center p-2">
+                    <h6 class="card-title mb-1">
+                      <i class="fas fa-water"></i> Nước uống
+                    </h6>
+                    <p class="card-text mb-2">10,000 VNĐ</p>
+                    <input
+                      type="checkbox"
+                      class="accessory-checkbox"
+                      id="water"
+                    />
+                    <label for="water" class="d-block mb-1">Chọn</label>
+                    <input
+                      type="number"
+                      class="form-control quantity-input"
+                      placeholder="Số lượng"
+                      min="1"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thông tin đặt lịch -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="card shadow-lg p-4 border-0 rounded-lg">
+            <h4><i class="fas fa-info-circle"></i> Thông tin đặt lịch</h4>
+            <hr />
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="contactName"
+                    ><i class="fas fa-user"></i> Tên liên hệ</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="contactEmail"
+                    ><i class="fas fa-envelope"></i> Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="contactPhone"
+                    ><i class="fas fa-phone"></i> Số điện thoại</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="contactPhone"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="note"
+                  ><i class="fas fa-sticky-note"></i> Ghi chú (nếu có)</label
+                >
+                <textarea class="form-control" id="note" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="paymentMethod"
+                  ><i class="fas fa-credit-card"></i> Phương thức thanh
+                  toán</label
+                >
+                <select class="form-control" id="paymentMethod" required>
+                  <option>Chuyển khoản ngân hàng</option>
+                  <option>Tiền mặt tại sân</option>
+                  <option>Thanh toán trực tuyến</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-calendar-check"></i> Đặt lịch
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>GIỚI THIỆU</h5>
+            <p>
+              Đặt sân 247 cung cấp các tiện ích thông minh giúp cho bạn tìm sân
+              bãi và đặt sân một cách hiệu quả nhất.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>THÔNG TIN</h5>
+            <p>Công ty Cổ phần Booking 247</p>
+            <p>MST: 0110175404</p>
+            <p>Email: contact@datsan247.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5>LIÊN HỆ</h5>
+            <p>Chăm sóc khách hàng: 0247.303.0247</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      // JavaScript để chọn khung giờ và phụ kiện
+      $(document).ready(function () {
+        $(".time-slot").on("click", function () {
+          $(this).toggleClass("btn-primary").toggleClass("btn-outline-primary");
+        });
+
+        $(".accessory-checkbox").on("change", function () {
+          var quantityInput = $(this)
+            .closest(".card-body")
+            .find(".quantity-input");
+          if ($(this).is(":checked")) {
+            quantityInput.show();
+          } else {
+            quantityInput.hide().val("");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

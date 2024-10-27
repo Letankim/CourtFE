@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #004080;
+    border-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+.accessory-card {
+    border: 1px solid #f0f2f5;
+    cursor: pointer;
+}
+
+.accessory-card:hover {
+    border-color: #004080;
+}
+
+.accessory-card .quantity-input {
+    width: 70%;
+    margin-top: 10px;
+}
+
+h2,
+h4 {
+    color: #004080;
+}

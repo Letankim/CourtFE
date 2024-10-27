@@ -1,0 +1,123 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.bg-primary {
+    background-color: #18458b !important;
+}
+
+.btn-warning {
+    background-color: #FFC107 !important;
+    border-color: #FFC107 !important;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.bg-primary {
+    background-color: #004080 !important;
+}
+
+.card-title {
+    color: #004080;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Đặt chiều cao tối thiểu cho card */
+.courtsList .card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Đặt card-img-top thành cố định và căn chỉnh nội dung */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Đặt card-body thành phần còn lại của card */
+.card-body {
+    flex: 1 1 auto;
+}
+
+/* Đảm bảo các nút chi tiết luôn nằm cuối */
+.card .btn {
+    margin-top: auto;
+}
+
+/* Nút */
+.btn-primary {
+    background-color: #004080;
+    border-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+/* styles.css */
+
+/* Tùy chỉnh cho phân trang */
+.custom-pagination .page-link {
+    color: #004080;
+    background-color: white;
+    border: 1px solid #004080;
+    border-radius: 30px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng hover */
+.custom-pagination .page-link:hover {
+    background-color: #004080;
+    color: white;
+    border-color: #004080;
+}
+
+/* Trang hiện tại */
+.custom-pagination .page-item.active .page-link {
+    background-color: #004080;
+    color: white;
+    border-color: #004080;
+}
+
+/* Vô hiệu hóa */
+.custom-pagination .page-item.disabled .page-link {
+    color: #cccccc;
+    background-color: #f9f9f9;
+    border-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Khoảng cách giữa các nút */
+.custom-pagination .page-item {
+    margin: 0 3px;
+}

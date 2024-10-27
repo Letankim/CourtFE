@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.card,
+.tab-content {
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover,
+.tab-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: #004080;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #004080;
+    color: white;
+}
+
+h4 {
+    color: #004080;
+}
+
+.footer {
+    background-color: #004080;
+    color: white;
+}

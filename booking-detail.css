@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-info {
+    background-color: #17a2b8;
+}
+
+.badge-primary {
+    background-color: #004080;
+}
+
+h2,
+h4 {
+    color: #004080;
+}
+
+.footer {
+    background-color: #004080;
+    color: white;
+}
+
+hr {
+    border-top: 2px solid #eee;
+}

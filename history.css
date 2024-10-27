@@ -1,0 +1,52 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
+
+.badge-info {
+    background-color: #17a2b8;
+}
+
+.btn-outline-primary:hover {
+    background-color: #004080;
+    color: white;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+h2 {
+    color: #004080;
+}
+
+.footer {
+    background-color: #004080;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f0f2f5;
+}
